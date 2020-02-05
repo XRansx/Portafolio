@@ -1,7 +1,55 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?4xwzne');
+  src:  url('../fonts/icomoon.eot?4xwzne#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4xwzne') format('truetype'),
+    url('../fonts/icomoon.woff?4xwzne') format('woff'),
+    url('../fonts/icomoon.svg?4xwzne#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+@font-face {
+  font-family: Hacked;
+  src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+.error{
+  color: #FAFAFA;;
+  font-family: 'Hacked', sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   background-color: black;
+  margin: 0 20px;
 }
 h1,
 h2,
@@ -10,7 +58,7 @@ h4,
 h5,
 h6{
   font-family: 'Roboto', sans-serif;
-  font-weight: normal
+  font-weight: normal;
 }
 
 h1{
@@ -41,13 +89,24 @@ h2{
 .project{
   box-shadow: 0 0 15px rgb(180, 180, 180);
   border-radius: 10px;
-  /* margin: 10px; */
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 10px 20px;
   background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.project_btn{
+  background-color: #abeeed;
+  padding: 5px 15px;
+  font-size: 15px;
+  color: black;
+  border:0;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .project_course,
@@ -55,7 +114,6 @@ h2{
 .project_url{
   margin: 10px 0;
 }
-
 
 .project strong{
   font-family: 'Source Sans Pro', sans-serif;
@@ -70,13 +128,23 @@ h2{
 }
 .project_details{
   width: 500px;
+  margin-right: 20px;
 }
 .project_details img{
   height: 25px;
 }
 .project_imageContainer{
   width: 400px;
+  height: 300px;
+  display: flex;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_image{
+  max-width: 400px;
+  max-height: 300px;
 }
 
 .portfolio{
@@ -167,17 +235,19 @@ figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px 25px 20px;
+  padding: 15px;
 }
 
 .social_link{
   display: inline-block;
-  height: 50px;
-  width: 50px;
-  background-size: 50px 50px;
+  height: 45px;
+  width: 45px;
+  background-size: 45px 45px;
   margin: 0 10px;
 }
-
+.social_link.blog{
+  background-image: url(/images/wordpress-plain.svg) ;
+}
 .social_link.twitter{
   background-image: url(/images/twitter.svg) ;
 }
@@ -193,6 +263,23 @@ figure{
 .social_link.linkedin{
   background-image: url(/images/linkedin.svg) ;
 }
+.up{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+  background-image: url(/images/arrow_up.png);
+  background-repeat: no-repeat;
+}
+.up:hover{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-size: 50px;
+  background-image: url(/images/arrow_up.png);
+  background-repeat: no-repeat;
+}
+
 .platzi{
   display: inline-block;
   height: 20px;
@@ -202,8 +289,9 @@ figure{
   background-repeat: no-repeat;
 }
 
-.form_email input{
-  border-color: gray;
+.form_email button{
+  background-color:#FAFAFA;
+  border-color:  #059b98;
   border-radius: 5px;
   border-style: solid;
   padding: 5px 20px 5px 25px;
@@ -214,19 +302,47 @@ figure{
   background-position-x: 5px;
 }
 
-.form_email button{
-  display: block;
-  background: transparent;
-  color: white;
-  padding: 5px 0;
-  border-radius: 5px;
-  border-style: solid;
-  margin-top: 10px;
-  width: 100px;
-  margin-top: 10px;
-}
-
 .form_email h3{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+}
+
+.burger-button{
+  display: none;
+  line-height: 40px;
+  text-align: center;  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+}
+
+.profilePicture{
+  width: 250px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+
+.project h4{
+  color:#00cec9;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  margin-top: -15px;
+  font-weight: bold;
+}
+
+.profile{
+  justify-content: initial;
+}
+
+.about{
+  display: block;
+}
+
+.profile_text{
+  margin-left: 20px;
 }

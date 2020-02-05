@@ -3,30 +3,30 @@
 
 <head>
     <meta charset="UTF-8" />
-    <script type="text/javascript" src="/javascript.js"></script>
     <title>Francisco Araujo</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Source+Sans+Pro&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <figure class="logo">
-            <img src="images/logo.png" height="50" alt="Logo imagen">
+            <a href="   "><img src="images/logo.png" height="50" alt="Logo imagen"></a>
         </figure>
         <nav class="menu">
             <ol>
                 <li>
                     <a class="link" href="#portafolio">Portafolio</a>
                 </li>
-                <!-- <li>
-                    <a class="link" href="#experiencia">Experiencia</a>
-                </li> -->
                 <li>
                     <a class="link" href="#contacto">Contacto</a>
+                </li>
+                <li>
+                    <a class="link" href="perfil.html">Perfil</a>
                 </li>
             </ol>
         </nav>
@@ -41,69 +41,108 @@
     </section>
     <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos personales)</h2>
-        <article class="project">
+        <article class="project" id="id8Bit"> 
+            <div class="project_details">
+                <h3 class="project_title">8 Bit Store</h3>
+                <h6 class="project_course">
+                    <img src="/images/badges/html5-plain.svg">
+                    <img src="/images/badges/css3-plain.svg">
+                </h6>
+                <p class="project_date"><small><strong>Fecha: </strong>10/01/2020</small></p>
+                <p class="project_description"> Maquetacion y diseño de una pagina que vende articulos ficticios de
+                    videojuegos contiene animaciones con css y un boton funcinal para pago con PayPal.
+                </p>
+                <p class="project_description">Conocimientos adquiridos: Refuerzo de HTML y CSS, animaciones con CSS diseño responsive y uso de flex y grid</p>
+                <a href="proyectos/8bitStore"><button class="project_btn">Ver proyecto</button></a>
+            </div>
+            <figure class="project_imageContainer">
+                <img class="project_image" src="proyectos/8bitStore/images/8BitStoreGif.gif">
+            </figure>
+        </article>
+        <article class="project" id="idGoogle">
+            <div class="project_details">
+                <h3 class="project_title">Clon de Google</h3>
+                <h6 class="project_course">
+                    <img src="/images/badges/html5-plain.svg">
+                    <img src="/images/badges/css3-plain.svg">
+                </h6>
+                <p class="project_date"><small><strong>Fecha: </strong>26/12/2019</small></p>
+                <p class="project_description"> Maquetacion y diseño de un clon de la pagina principal del buscador
+                    Google.
+                </p>
+                <p class="project_description">Conocimientos adquiridos: Refuerzo de HTML y CSS, uso de flex y grid </p>
+                <a href="proyectos/clonGoogle"><button class="project_btn">Ver proyecto</button></a>
+            </div>
+            <figure class="project_imageContainer">
+                <img class="project_image " src="images/clongoogle.png">
+            </figure>
+        </article>
+        <article class="project" id="idSimon">
+            <div class="project_details">
+                <h3 class="project_title">Juego Simon dice</h3>
+                <h6 class="project_course">
+                    <img src="/images/badges/html5-plain.svg">
+                    <img src="/images/badges/css3-plain.svg">
+                    <img src="/images/badges/javascript-plain.svg">
+                </h6>
+                <p class="project_date"><small><strong>Fecha: </strong>12/12/2019</small></p>
+                <p class="project_description">Diseño de un juego utilizando Javascrip, se trata de recordar el patron de colores que se va mostrando de manera aleatoria, se consigue ganar al llegar a 10 puntos. Se muestra mensaje al ganar o perder y el juego se reinicia</p>
+                <p class="project_description">Conocimientos adquiridos: Refuerzo de CSS, uso de metodologia BEM y
+                    preprocesador SASS</p>
+                <a href="proyectos/simon"><button class="project_btn">Ver proyecto</button></a>
+            </div>
+            <figure class="project_imageContainer">
+                <img class="project_image" src="images/simonimg.png">
+            </figure>
+        </article>
+        <article class="project" id="idVideo">
+            <div class="project_details">
+                <h3 class="project_title">Play Video</h3>
+                <h6 class="project_course">
+                    <img src="/images/badges/html5-plain.svg">
+                    <img src="/images/badges/css3-plain.svg">
+                    <img src="/images/badges/sass-original.svg">
+                </h6>
+                <p class="project_date"><small><strong>Fecha: </strong>01/09/2019</small></p>
+                <p class="project_description">Diseño y maquetacion de una pagina de inicio de sesion y registro de una
+                    forma simple</p>
+                <p class="project_description">Conocimientos adquiridos: Refuerzo de CSS, uso de metodologia BEM y
+                    preprocesador SASS</p>
+                    <a href="proyectos/proyectoVideo/login.html"><button class="project_btn">Ver proyecto</button></a>
+            </div>
+            <figure class="project_imageContainer">
+                <img class="project_image" src="images/DevicesVideo.png">
+            </figure>
+        </article>
+        <article class="project" id="idPortafolio">
             <div class="project_details">
                 <h3 class="project_title">Proyecto Portafolio</h3>
                 <h6 class="project_course">
-                    <img src="/images/html5-plain.svg">
-                    <img src="/images/css3-plain.svg">
+                    <img src="/images/badges/html5-plain.svg">
+                    <img src="/images/badges/css3-plain.svg">
+                    <img src="/images/badges/javascript-plain.svg">
                 </h6>
                 <p class="project_date"><small><strong>Fecha: </strong>30/05/2019</small></p>
-                <p class="project_description"> Página construida para montar un portafolio personal y subir cada
+                <p class="project_description"> Esta misma página, construida para montar un portafolio personal y subir
+                    cada
                     proyecto de los cursos que actualmente estoy llevando. Para este proyecto se utilizó
-                    <strong>HTML</strong>, <strong>CSS</strong>
-                    y se utilizó <strong>responsive desing</strong> para adaptar a diferentes dispositivos
+                    HTML, CSS y se utilizó responsive desing para adaptar a diferentes dispositivos
                 </p>
-                <!-- <img src="/images/github-original.svg"> -->
+                <p class="project_description">Conocimientos adquiridos: Refuerzo de HTML y CSS, uso de git y github
+                    para el control de versiones</p>
             </div>
             <figure class="project_imageContainer">
-                <img class="project_image " src="images/html.jpeg" width="400px;">
-            </figure>
-        </article>
-        <article class="project">
-            <div class="project_details">
-                <h3 class="project_title">Monitor de humedad y temperatura</h3>
-                <h6 class="project_course">
-                    <img src="/images/html5-plain.svg">
-                    <img src="/images/css3-plain.svg">
-                    <img src="/images/javascript-plain.svg">
-                    <img src="/images/php-plain.svg">
-                    <img src="/images/mysql-plain.svg">
-                    <img src="/images/arduino-vector-log.png">
-                </h6>
-                <p class="project_date"><small><strong>Fecha: </strong>30/05/2019</small></p>
-                <p class="project_url">Puedes verlo aqui: <a
-                        href="https://www.fjaraujo.com/proyectos/arduino-temperature">Monitor de temperatura</a>
-                </p>
-                <p class="project_description">Página web para monitorear las lecturas de humedad y temperatura tomadas
-                    por un circuito creado con Arduino, usando un sensor DHT11 y una interface ethernet se envian las
-                    lecturas
-                    a una base de datos <strong>MYSQL</strong> usando <strong>PHP</strong> y se consultan usando
-                    <strong>Javascript</strong>.</p>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image " src="images/arduino-UNO.png">
+                <img class="project_image " src="images/DevicesPortafolio.png">
             </figure>
         </article>
     </section>
-    <!-- <section id="experiencia">
-        <h2>Experiencia</h2>
-        <article class="event">
-            <figure class="event_imageContainer">
-                <img class="event_image">
-            </figure>
-            <h3 class="event_title">Titulo aqui</h3>
-            <p class="event_description">Descripcion aqui</p>
-            <a class="event_url">Ver recurso</a>
-        </article>
-    </section> -->
     <section class="contact" id="contacto">
-        <form class="form_email" action="/mail/">
+        <form class="form_email" action="mailto:contacto@fjaraujo.com">
             <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Enviar mail" id="email">
-            <button id="boton_enviar">Enviar</button>
+            <button id="boton_enviar">Enviame un email</button>
         </form>
         <div class="social">
+            <a href="http://blog.fjaraujo.com" class="social_link blog" target="_blank"></a>
             <a href="https://twitter.com/XRans" class="social_link twitter" target="_blank"></a>
             <a href="https://www.facebook.com/XRans" class="social_link facebook" target="_blank"></a>
             <a href="https://github.com/XRansx" class="social_link github" target="_blank"></a>
@@ -116,12 +155,11 @@
         <div>
             <p> contacto@fjaraujo.com</p>
         </div>
-        <div>
-            <p>Designed with &lt3 by fjaraujo <a href="https://platzi.com/@fjaraujo/" target="_blank"
-                    class="platzi"></a></p>
-
+        <a href="#top" class="up"></a>
+        <div>   
+            <p>Designed with &lt3 by fjaraujo</p>
         </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
-
 </html>
