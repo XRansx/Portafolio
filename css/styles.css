@@ -341,8 +341,13 @@ figure{
 
 .about{
   display: block;
+  padding: 20px;
 }
 
 .profile_text{
   margin-left: 20px;
+}
+
+.badge_profile{
+  height:3em;
 }
