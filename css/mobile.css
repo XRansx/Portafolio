@@ -21,6 +21,7 @@
   }
   .project_imageContainer{
     width: 350px;
+    margin: 0;
   }
   .project_image{
     max-width: 350px;
