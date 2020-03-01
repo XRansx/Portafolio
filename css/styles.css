@@ -34,15 +34,47 @@
   src: url(https://hackedfont.com/HACKED.ttf);
 }
 
-.error{
-  color: #FAFAFA;;
+.error__container{
+  color: white;
+  background-color: #0b0f13;
   font-family: 'Hacked', sans-serif;
   font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 60vh;
+}
+.error__titulo{
+  font-family: 'Hacked', sans-serif;
+  font-weight: normal;
+  font-size: 120px;
+  position: relative;
+  z-index: 2;
+}
+.error__titulo--white{
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.error__titulo--red{
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 86, 86, 0.9);
+  top: -4px;
+  right: -5px;
+  z-index: 1;
+}
+.error__titulo--blue{
+  width: 100%;
+  position: absolute;
+  color: rgba(0, 61, 228, 0.9);
+  top: 4px;
+  right: 5px;
+  z-index: 1;
 }
 
 body {

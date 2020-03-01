@@ -1,10 +1,12 @@
 mixin social(clase,link,target)
   a.social_link(class=""+clase href=""+link target=""+target)
-mixin article0(nombre,fecha,imagen,descipcion,conocimientos)
+mixin article0(badges,nombre,fecha,imagen,descipcion,conocimientos)
   article.project
     .project_details
       h3.project_title=nombre
       h6.project_course
+        each badge in badges
+          img(src="/images/badges/"+badge)
       p.project_date
         small
           strong Fecha: 
@@ -13,11 +15,13 @@ mixin article0(nombre,fecha,imagen,descipcion,conocimientos)
       p.project_desciption=conocimientos
     figure.project_imageContainer
       img.project_image(src=""+imagen)
-mixin article1(nombre,fecha,imagen,descipcion,conocimientos,link)
+mixin article1(badges,nombre,fecha,imagen,descipcion,conocimientos,link)
   article.project
     .project_details
       h3.project_title=nombre
       h6.project_course
+      each badge in badges
+          img(src="/images/badges/"+badge)
       p.project_date
         small
           strong Fecha: 
@@ -27,11 +31,13 @@ mixin article1(nombre,fecha,imagen,descipcion,conocimientos,link)
       a(href=""+link): button.project_btn Ver proyecto
     figure.project_imageContainer
       img.project_image(src=""+imagen)
-mixin article2(nombre,fecha,imagen,descipcion,conocimientos,link1,link2,text1,text2)
+mixin article2(badges,nombre,fecha,imagen,descipcion,conocimientos,link1,link2,text1,text2)
   article.project
     .project_details
       h3.project_title=nombre
       h6.project_course
+      each badge in badges
+          img(src="/images/badges/"+badge)
       p.project_date
         small
           strong Fecha: 
@@ -43,5 +49,3 @@ mixin article2(nombre,fecha,imagen,descipcion,conocimientos,link1,link2,text1,te
         a(href=""+link2): button.project_btn=text2
     figure.project_imageContainer
       img.project_image(src=""+imagen)
-mixin badge(icon)
-  img(src="/images/badges/"+icon)
