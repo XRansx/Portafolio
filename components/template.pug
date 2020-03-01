@@ -1,0 +1,11 @@
+include config.pug
+<!DOCTYPE html>
+html(lang="es")
+  include head.pug
+  body
+    i.icon-menu.burger-button
+    include header.pug
+    block contenido
+    include contact.pug
+    include footer.pug
+    scrip(src="/script.js")

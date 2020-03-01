@@ -1,193 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Source+Sans+Pro&amp;display=swap"/>
     <title>Francisco Araujo</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Source+Sans+Pro&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-    <i class="icon-menu burger-button" id="burger-menu"></i>
+  </head>
+  <body><i class="icon-menu burger-button"></i>
     <header class="header">
-        <figure class="logo">
-            <a href="   "><img src="images/logo.png" height="50" alt="Logo imagen"></a>
-        </figure>
-        <nav class="menu">
-            <ol>
-                <li>
-                    <a class="link" href="#portafolio">Portafolio</a>
-                </li>
-                <li>
-                    <a class="link" href="#contacto">Contacto</a>
-                </li>
-                <li>
-                    <a class="link" href="perfil.html">Perfil</a>
-                </li>
-            </ol>
-        </nav>
+      <figure class="logo"><a href=""><img src="images/logo.png" height="50" alt="Logo imagen"/></a></figure>
+      <nav class="menu">
+        <ol>
+          <li><a class="link" href="index.html">Portafolio</a></li>
+          <li><a class="link" href="#contacto">Contacto</a></li>
+          <li><a class="link" href="perfil.html">Perfil</a></li>
+        </ol>
+      </nav>
     </header>
     <section class="hero">
-        <h1>Hola a todos! soy <strong>Francisco Araujo</strong><br> bienvenidos a mi web
-        </h1>
-        <figure class="hero_imageContanier">
-            <img class="hero_image" width="500px" src="images/codeh.png">
-        </figure>
-
+      <h1>Hola a todos! soy <strong>Francisco Araujo </strong><br/>bienvenidos a mi web</h1>
+      <figure class="hero_imageContainer"><img class="hero_image" width="500px" src="images/codeh.png"/></figure>
     </section>
-    <section id="portafolio" class="portfolio">
-        <h2>Portafolio (Proyectos personales)</h2>
-        <article class="project" id="id8Bit">
-            <div class="project_details">
-                <h3 class="project_title">Layout Instagram y Pinterest</h3>
-                <h6 class="project_course">
-                    <img src="/images/badges/html5-plain.svg">
-                    <img src="/images/badges/css3-plain.svg">
-                </h6>
-                <p class="project_date"><small><strong>Fecha: </strong>19/02/2020</small></p>
-                <p class="project_description"> Maquetacion de layouts de las paginas Insatagarm y pinterest utilizando
-                    css-grid para ordenar las imagenes.
-                </p>
-                <p class="project_description">Conocimientos adquiridos: Css-grid layout</p>
-                <div class="grid2btns">
-                    <a href="proyectos/css-grid/instagram.html"><button class="project_btn">Layout
-                            Instagram</button></a>
-                    <a href="proyectos/css-grid/pinterest.html"><button class="project_btn">Layout
-                            Pinterest</button></a>
-                </div>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image" src="/images/grid.png">
-            </figure>
-        </article>
-        <article class="project" id="id8Bit">
-            <div class="project_details">
-                <h3 class="project_title">8 Bit Store</h3>
-                <h6 class="project_course">
-                    <img src="/images/badges/html5-plain.svg">
-                    <img src="/images/badges/css3-plain.svg">
-                </h6>
-                <p class="project_date"><small><strong>Fecha: </strong>10/01/2020</small></p>
-                <p class="project_description"> Maquetacion y diseño de una pagina que vende articulos ficticios de
-                    videojuegos contiene animaciones con css y un boton funcinal para pago con PayPal.
-                </p>
-                <p class="project_description">Conocimientos adquiridos: Refuerzo de HTML y CSS, animaciones con CSS
-                    diseño responsive y uso de flex y grid</p>
-                <a href="proyectos/8bitStore"><button class="project_btn">Ver proyecto</button></a>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image" src="proyectos/8bitStore/images/8BitStoreGif.gif">
-            </figure>
-        </article>
-        <article class="project" id="idGoogle">
-            <div class="project_details">
-                <h3 class="project_title">Clon de Google</h3>
-                <h6 class="project_course">
-                    <img src="/images/badges/html5-plain.svg">
-                    <img src="/images/badges/css3-plain.svg">
-                </h6>
-                <p class="project_date"><small><strong>Fecha: </strong>26/12/2019</small></p>
-                <p class="project_description"> Maquetacion y diseño de un clon de la pagina principal del buscador
-                    Google.
-                </p>
-                <p class="project_description">Conocimientos adquiridos: Refuerzo de HTML y CSS, uso de flex y grid </p>
-                <a href="proyectos/clonGoogle"><button class="project_btn">Ver proyecto</button></a>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image " src="images/clongoogle.png">
-            </figure>
-        </article>
-        <article class="project" id="idSimon">
-            <div class="project_details">
-                <h3 class="project_title">Juego Simon dice</h3>
-                <h6 class="project_course">
-                    <img src="/images/badges/html5-plain.svg">
-                    <img src="/images/badges/css3-plain.svg">
-                    <img src="/images/badges/javascript-plain.svg">
-                </h6>
-                <p class="project_date"><small><strong>Fecha: </strong>12/12/2019</small></p>
-                <p class="project_description">Diseño de un juego utilizando Javascrip, se trata de recordar el patron
-                    de colores que se va mostrando de manera aleatoria, se consigue ganar al llegar a 10 puntos. Se
-                    muestra mensaje al ganar o perder y el juego se reinicia</p>
-                <p class="project_description">Conocimientos adquiridos: Refuerzo de CSS, uso de metodologia BEM y
-                    preprocesador SASS</p>
-                <a href="proyectos/simon"><button class="project_btn">Ver proyecto</button></a>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image" src="images/simonimg.png">
-            </figure>
-        </article>
-        <article class="project" id="idVideo">
-            <div class="project_details">
-                <h3 class="project_title">Play Video</h3>
-                <h6 class="project_course">
-                    <img src="/images/badges/html5-plain.svg">
-                    <img src="/images/badges/css3-plain.svg">
-                    <img src="/images/badges/sass-original.svg">
-                </h6>
-                <p class="project_date"><small><strong>Fecha: </strong>01/09/2019</small></p>
-                <p class="project_description">Diseño y maquetacion de una pagina de inicio de sesion y registro de una
-                    forma simple</p>
-                <p class="project_description">Conocimientos adquiridos: Refuerzo de CSS, uso de metodologia BEM y
-                    preprocesador SASS</p>
-                <a href="proyectos/proyectoVideo/login.html"><button class="project_btn">Ver proyecto</button></a>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image" src="images/DevicesVideo.png">
-            </figure>
-        </article>
-        <article class="project" id="idPortafolio">
-            <div class="project_details">
-                <h3 class="project_title">Proyecto Portafolio</h3>
-                <h6 class="project_course">
-                    <img src="/images/badges/html5-plain.svg">
-                    <img src="/images/badges/css3-plain.svg">
-                    <img src="/images/badges/javascript-plain.svg">
-                </h6>
-                <p class="project_date"><small><strong>Fecha: </strong>30/05/2019</small></p>
-                <p class="project_description"> Esta misma página, construida para montar un portafolio personal y subir
-                    cada
-                    proyecto de los cursos que actualmente estoy llevando. Para este proyecto se utilizó
-                    HTML, CSS y se utilizó responsive desing para adaptar a diferentes dispositivos
-                </p>
-                <p class="project_description">Conocimientos adquiridos: Refuerzo de HTML y CSS, uso de git y github
-                    para el control de versiones</p>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image " src="images/DevicesPortafolio.png">
-            </figure>
-        </article>
+    <section class="portfolio" id="portafolio">
+      <h2>Portafolio (Proyectos personales)</h2>
+      <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Layout Instagram y Pinterest</h3>
+          <h6 class="project_course"></h6><img src="/images/badges/html.svg"/><img src="/images/badges/css.svg"/>
+          <p class="project_date"><small><strong>Fecha: </strong>19/02/2020</small></p>
+          <p class="project_desciption">Maquetacion de layouts de las paginas Insatagarm y pinterest utilizando css-grid para ordenar las imagenes.</p>
+          <p class="project_desciption">Conocimientos adquiridos: Css-grid layout</p>
+          <div class="grid2btns"><a href="proyectos/css-grid/instagram.html">
+              <button class="project_btn">Layout Instagram</button></a><a href="proyectos/css-grid/pinterest.html">
+              <button class="project_btn">Layout Pinterest</button></a></div>
+        </div>
+        <figure class="project_imageContainer"><img class="project_image" src="/images/grid.png"/></figure>
+      </article>
+      <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">8 Bit Store</h3>
+          <h6 class="project_course"></h6><img src="/images/badges/html.svg"/><img src="/images/badges/css.svg"/>
+          <p class="project_date"><small><strong>Fecha: </strong>10/01/2020</small></p>
+          <p class="project_desciption">Maquetacion y diseño de una pagina que vende articulos ficticios de videojuegos contiene animaciones con css y un boton funcional para pago con PayPal.</p>
+          <p class="project_desciption">Conocimientos adquiridos: Refuerzo de HTML y CSS, animaciones con CSS diseño responsive y uso de flex y grid</p><a href="proyectos/8bitStore">
+            <button class="project_btn">Ver proyecto</button></a>
+        </div>
+        <figure class="project_imageContainer"><img class="project_image" src="proyectos/8bitStore/images/8BitStoreGif.gif"/></figure>
+      </article>
+      <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Clon Google</h3>
+          <h6 class="project_course"></h6><img src="/images/badges/html.svg"/><img src="/images/badges/css.svg"/>
+          <p class="project_date"><small><strong>Fecha: </strong>26/12/2019</small></p>
+          <p class="project_desciption">Maquetacion y diseño de un clon de la pagina principal del buscador Google.</p>
+          <p class="project_desciption">Conocimientos adquiridos: Refuerzo de HTML y CSS, uso de flex y grid</p><a href="proyectos/clonGoogle">
+            <button class="project_btn">Ver proyecto</button></a>
+        </div>
+        <figure class="project_imageContainer"><img class="project_image" src="images/clongoogle.png"/></figure>
+      </article>
+      <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Juego Simon dice</h3>
+          <h6 class="project_course"></h6><img src="/images/badges/html.svg"/><img src="/images/badges/css.svg"/><img src="/images/badges/javascript.svg"/><img src="/images/badges/sass.svg"/>
+          <p class="project_date"><small><strong>Fecha: </strong>12/12/2019</small></p>
+          <p class="project_desciption">Diseño de un juego utilizando Javascrip, se trata de recordar el patron de colores que se va mostrando de manera aleatoria, se consigue ganar al llegar a 10 puntos. Se muestra mensaje al ganar o perder y el juego se reinicia</p>
+          <p class="project_desciption">Conocimientos adquiridos: Refuerzo de CSS, uso de metodologia BEM y preprocesador SASS</p><a href="proyectos/simon">
+            <button class="project_btn">Ver proyecto</button></a>
+        </div>
+        <figure class="project_imageContainer"><img class="project_image" src="images/simonimg.png"/></figure>
+      </article>
+      <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Play Video</h3>
+          <h6 class="project_course"></h6><img src="/images/badges/html.svg"/><img src="/images/badges/css.svg"/>
+          <p class="project_date"><small><strong>Fecha: </strong>01/09/2019</small></p>
+          <p class="project_desciption">Diseño y maquetacion de una pagina de inicio de sesion y registro de una forma simple</p>
+          <p class="project_desciption">Refuerzo de CSS, uso de metodologia BEM y preprocesador SASS</p><a href="proyectos/proyectoVideo/login.html">
+            <button class="project_btn">Ver proyecto</button></a>
+        </div>
+        <figure class="project_imageContainer"><img class="project_image" src="images/DevicesVideo.png"/></figure>
+      </article>
+      <article class="project">
+        <div class="project_details">
+          <h3 class="project_title">Proyecto Portafolio</h3>
+          <h6 class="project_course"><img src="/images/badges/html.svg"/><img src="/images/badges/css.svg"/><img src="/images/badges/javascript.svg"/><img src="/images/badges/pug.svg"/>
+          </h6>
+          <p class="project_date"><small><strong>Fecha: </strong>30/05/2019</small></p>
+          <p class="project_desciption">Esta misma página, construida para montar un portafolio personal y subir cada proyecto de los cursos que actualmente estoy llevando. Para este proyecto se utilizó HTML, CSS y se utilizó responsive desing para adaptar a diferentes dispositivos</p>
+          <p class="project_desciption">Uso de HTML y CSS, git y github para el control de versiones, se utilizó el preprocesador pug para agilizar el desarrollo</p>
+        </div>
+        <figure class="project_imageContainer"><img class="project_image" src="images/DevicesPortafolio.png"/></figure>
+      </article>
     </section>
     <section class="contact" id="contacto">
-        <form class="form_email" action="mailto:contacto@fjaraujo.com">
-            <h3>¿Creamos algo juntos?</h3>
-            <button id="boton_enviar">Enviame un email</button>
-        </form>
-        <div class="social">
-            <a href="http://blog.fjaraujo.com" class="social_link blog" target="_blank"></a>
-            <a href="https://twitter.com/XRans" class="social_link twitter" target="_blank"></a>
-            <a href="https://www.facebook.com/XRans" class="social_link facebook" target="_blank"></a>
-            <a href="https://github.com/XRansx" class="social_link github" target="_blank"></a>
-            <a href="https://www.instagram.com/fjarauj0/" class="social_link instagram" target="_blank"></a>
-            <a href="https://www.linkedin.com/in/francisco-javier-araujo-de-la-garza-449024180/"
-                class="social_link linkedin" target="_blank"></a>
-        </div>
+      <form class="form_email" action="mailto:contacto@fjaraujo.com">
+        <h3>¿Creamos algo juntos?</h3>
+        <button id="boton_enviar">Enviame un email</button>
+      </form>
+      <div class="social"><a class="social_link blog" href="http://blog.fjaraujo.com" target="_blank"></a><a class="social_link twitter" href="https://twitter.com/XRans" target="_blank"></a><a class="social_link facebook" href="https://www.facebook.com/XRans" target="_blank"></a><a class="social_link github" href="https://github.com/XRansx" target="_blank"></a><a class="social_link instagram" href="https://www.instagram.com/fjarauj0/" target="_blank"></a><a class="social_link linkedin" href="https://www.linkedin.com/in/francisco-javier-araujo-de-la-garza-449024180/" target="_blank"></a>
+      </div>
     </section>
     <footer class="footer">
-        <div>
-            <p> contacto@fjaraujo.com</p>
-        </div>
-        <a href="#top" class="up"></a>
-        <div>
-            <p>Designed by fjaraujo</p>
-        </div>
+      <div>
+        <p>contacto@fjaraujo.com</p>
+      </div><a class="up" href="#top"></a>
+      <div>
+        <p>Designed by fjaraujo</p>
+      </div>
     </footer>
-    <script src="/script.js"></script>
-</body>
-
+    <scrip src="/script.js"></scrip>
+  </body>
 </html>
