@@ -3,9 +3,9 @@ include config.pug
 html(lang="es")
   include head.pug
   body
-    i.icon-menu.burger-button
+    i.icon-menu.burger-button(id="burger-menu")
     include header.pug
     block contenido
     include contact.pug
     include footer.pug
-    scrip(src="/script.js")
+    script(src="script.js")

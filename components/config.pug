@@ -1,12 +1,12 @@
 mixin social(clase,link,target)
-  a.social_link(class=""+clase href=""+link target=""+target)
+  a.social_link(class=""+clase href=""+link target="_blank" rel="noopener" alt=""+clase)
 mixin article0(badges,nombre,fecha,imagen,descipcion,conocimientos)
   article.project
     .project_details
       h3.project_title=nombre
       h6.project_course
         each badge in badges
-          img(src="/images/badges/"+badge)
+          img(src="/images/badges/"+badge+".svg" alt=""+badge)
       p.project_date
         small
           strong Fecha: 
@@ -14,14 +14,14 @@ mixin article0(badges,nombre,fecha,imagen,descipcion,conocimientos)
       p.project_desciption=descipcion
       p.project_desciption=conocimientos
     figure.project_imageContainer
-      img.project_image(src=""+imagen)
+      img.project_image(src=""+imagen alt="imagen del proyecto "+nombre)
 mixin article1(badges,nombre,fecha,imagen,descipcion,conocimientos,link)
   article.project
     .project_details
       h3.project_title=nombre
       h6.project_course
       each badge in badges
-          img(src="/images/badges/"+badge)
+          img(src="/images/badges/"+badge+".svg" alt=""+badge)
       p.project_date
         small
           strong Fecha: 
@@ -30,14 +30,14 @@ mixin article1(badges,nombre,fecha,imagen,descipcion,conocimientos,link)
       p.project_desciption=conocimientos
       a(href=""+link): button.project_btn Ver proyecto
     figure.project_imageContainer
-      img.project_image(src=""+imagen)
+      img.project_image(src=""+imagen alt="imagen del proyecto "+nombre)
 mixin article2(badges,nombre,fecha,imagen,descipcion,conocimientos,link1,link2,text1,text2)
   article.project
     .project_details
       h3.project_title=nombre
       h6.project_course
       each badge in badges
-          img(src="/images/badges/"+badge)
+          img(src="/images/badges/"+badge+".svg" alt=""+badge)
       p.project_date
         small
           strong Fecha: 
@@ -48,4 +48,4 @@ mixin article2(badges,nombre,fecha,imagen,descipcion,conocimientos,link1,link2,t
         a(href=""+link1): button.project_btn=text1
         a(href=""+link2): button.project_btn=text2
     figure.project_imageContainer
-      img.project_image(src=""+imagen)
+      img.project_image(src=""+imagen alt="imagen del proyecto "+nombre)

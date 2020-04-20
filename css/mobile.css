@@ -1,5 +1,5 @@
 @media only screen and (max-width: 950px) {
-  .project_image{
+  .project_image {
     max-width: -webkit-fill-available;
   }
 }
@@ -9,74 +9,69 @@
     min-width: 400;
     margin: 0;
   }
-  .portfolio{
+  .portfolio {
     padding: 15px;
   }
-  .project{
+  .project {
     display: flex;
     flex-direction: column;
   }
-  .project_details{
+  .project_details {
     width: auto;
   }
-  .project_imageContainer{
-    width: 350px;
+  .project_imageContainer {
+    max-width: -webkit-fill-available;
     margin: 0;
   }
-  .project_image{
-    max-width: 350px;
-    max-height: 250px;
+  .project_image {
+    max-width: 100%;
+    max-height: 100%;
   }
-  .contact{
+  .contact {
     flex-direction: column;
+    height:auto;
   }
-  .form_email{
-    align-items: center;
-    display: flex;
-    height: 35px;
+  .form_email {
+    display: none;
   }
-  .form_email h3{
+  .form_email h3 {
     margin-right: 10px;
   }
-  .social_link{
+  .social_link {
     height: 35px;
     width: 35px;
     background-size: 35px 35px;
   }
-  .project_btn{
+  .project_btn {
     margin-bottom: 20px;
   }
-  .footer{
+  .footer {
     font-size: small;
   }
-  .profile_text{
+  .profile_text {
     margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .burger-button{
+  .burger-button {
     display: block;
     z-index: 2;
   }
-  .header{
+  .header ol {
     display: block;
     height: auto;
   }
-  .header ol{
-    display: block;
-    height: auto;
-  }
-  .header a{
+  .header a {
     justify-content: center;
     height: auto;
     font-size: 1.5em;
   }
-  .logo{
+  .logo {
     display: flex;
     justify-content: center;
   }
-  .menu{
+  .menu {
     display: flex;
     justify-content: center;
     padding-top: 70px;
@@ -85,23 +80,23 @@
     right: -100vh;
     height: 100vh;
     width: 40vw;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    transition: .3s;
-  } 
-  .menu a{
+    transition: 0.3s;
+  }
+  .menu a {
     margin-bottom: 1em;
   }
-  .menu.is-active{
+  .menu.is-active {
     right: 0;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .project_imageContainer{
+  .project_imageContainer {
     display: none;
   }
-  .social_link{
+  .social_link {
     height: 25px;
     width: 25px;
     background-size: 25px 25px;

@@ -29,54 +29,6 @@
   content: "\e9bd";
 }
 
-@font-face {
-  font-family: Hacked;
-  src: url(https://hackedfont.com/HACKED.ttf);
-}
-
-.error__container{
-  color: white;
-  background-color: #0b0f13;
-  font-family: 'Hacked', sans-serif;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 60vh;
-}
-.error__titulo{
-  font-family: 'Hacked', sans-serif;
-  font-weight: normal;
-  font-size: 120px;
-  position: relative;
-  z-index: 2;
-}
-.error__titulo--white{
-  width: 100%;
-  position: absolute;
-  color: white;
-  top: 0;
-  right: 0;
-  z-index: 2;
-}
-.error__titulo--red{
-  width: 100%;
-  position: absolute;
-  color: rgba(255, 86, 86, 0.9);
-  top: -4px;
-  right: -5px;
-  z-index: 1;
-}
-.error__titulo--blue{
-  width: 100%;
-  position: absolute;
-  color: rgba(0, 61, 228, 0.9);
-  top: 4px;
-  right: 5px;
-  z-index: 1;
-}
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
@@ -108,7 +60,7 @@ h1 strong{
 }
 
 h2{
-  color:#00cec9;
+  color:#1d252c;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
@@ -118,6 +70,10 @@ h2{
 .logo{
   margin: 0;
 }
+.logo img{
+  height: 30px;
+}
+
 .project{
   box-shadow: 0 0 15px rgb(180, 180, 180);
   border-radius: 10px;
@@ -196,13 +152,13 @@ h2{
   display: flex;
   align-items: center;
   padding: 25px 0 15px 25px;
-  box-shadow: inset 0 10px 10px -5px  #0b0f13;
+  box-shadow: inset 0 10px 10px -5px  #0e1115;
   justify-content: space-between;
   overflow: hidden;
 }
 
 .header{
-  background-color: #1d252c;
+  background-color: #14181d;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -250,7 +206,7 @@ figure{
 
 .footer{
   color: white;
-  background-color: #1b2127;
+  background-color: #14181d;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -364,7 +320,19 @@ figure{
 }
 
 .about{
-  display: block;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  text-align: center;
+}
+
+.badges img{
+  height: 50px;
+  margin: 5px;
+}
+
+.badges img:hover{
+  height: 60px;
+  margin:0;
 }
 
 .profile_text{
@@ -375,4 +343,9 @@ figure{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 5px;
+}
+
+.mail-link{
+  text-decoration: none;
+  color: white;
 }

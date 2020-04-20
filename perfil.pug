@@ -1,3 +1,53 @@
 extends components/template.pug
 block contenido
-  include components/profile.pug
+  section.portfolio 
+    h2 Perfil
+    article(class="project profile")
+      img(class="profilePicture" alt="Imagen de perfil" src="/images/pp1.jpeg")
+      .profile_text
+        h3 Francisco Javier Araujo de la Garza
+        h4 Ingeniero en sistemas computacionales
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptate sit vitae quaerat, illo maxime enim minus libero soluta, quas odio delectus sunt doloremque et, facere deleniti porro laudantium tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet magnam illum quae nostrum veniam tempore aliquid sunt distinctio dolore, labore, aperiam non. Magni soluta optio voluptatum alias ea explicabo aliquid?
+        //p Soy una persona curiosa por la tecnologia, actualmente tomo cursos en linea para ser desarrollador fullstack. Por el momento no tengo experincia laboralmente como programador, es por eso que realizo proyectos y los subo a mi pagina.
+    article(class="project about")
+      .skills
+        h3 Tecnologias y Frameworks
+        .badges
+          abbr(title="HTML")
+            img(src="/images/badges/html.svg")
+          abbr(title="CSS")
+            img(src="/images/badges/css.svg")
+          abbr(title="Javascript")
+            img(src="/images/badges/javascript.svg")
+          abbr(title="Preprocesador Sass")
+            img(src="/images/badges/sass.svg")
+          abbr(title="Framework Bootsrap")
+            img(src="/images/badges/bootstrap.svg")
+      .skills
+        h3 Conocimientos
+        .badges
+          abbr(title="Linux")
+            img(src="/images/badges/linux.svg")
+          abbr(title="git")
+            img(src="/images/badges/git.svg")
+          abbr(title="Github")
+            img(src="/images/badges/github.svg")
+          abbr(title="Devtools de Chrome")
+            img(src="/images/badges/chrome.svg")
+          abbr(title="Wordpress")
+            img(src="/images/badges/wordpress.svg")
+          abbr(title="PHP")
+            img(src="/images/badges/php.svg")
+          abbr(title="Java")
+            img(src="/images/badges/java.svg")
+      .skills 
+        h3 Software
+        .badges
+          abbr(title="Visual Studio Code")
+            img(src="/images/badges/visualstudio.svg")
+          abbr(title="Photoshop")
+            img(src="/images/badges/photoshop.svg")
+          abbr(title="Trello")
+            img(src="/images/badges/trello.svg")
+          abbr(title="Slack")
+            img(src="/images/badges/slack.svg")
